@@ -1,0 +1,661 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif; /* OPTIONAL: Google Fonts - base font */
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif; /* OPTIONAL: Google Fonts - title font */
+  font-weight: 300;
+  color: #333;
+}
+
+/* Paragraph & Typographic */
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+span.parSkills {
+  padding-left: 20px;
+}
+
+.centered {
+  -webkit-transition: all 1.3s;
+  -moz-transition: all 1.3s;
+  transition: all 1.3s;
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: #1CBCAD;
+  word-wrap: break-word;
+
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+  color: #7b7b7b;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before,
+a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*---------------------------------------------------
+SECTION WRAPS
+---------------------------------------------------*/
+
+/* Header Wrap */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+/*#headerPRJ .header{
+  background-image: url(../images/project-bg.jpg) no-repeat center top;
+}
+
+#headerHOME .header{
+  background-image: url(../images/header-bg.jpg) no-repeat center top;
+}*/
+
+.header {
+  position: fixed;
+  background: #2c3e50;
+  background: url(../images/header-bg.jpg) no-repeat center top;
+  padding-top: 140px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  height: 500px;
+  width: 100%;
+  z-index: 999;
+
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  -webkit-transition: all 1.3s;
+  -moz-transition: all 1.3s;
+  transition: all 1.3s;
+}
+
+.profilecls {
+  float: left;
+  width: 200px;
+  /*transition: 1.5s;*/
+  background: #555;
+
+  -webkit-transition: all 1.3s;
+  -moz-transition: all 1.3s;
+  transition: all 1.3s;
+}
+
+.header h1 {
+  font-size: 60px;
+  color: white;
+  /*background: rgba(0,0,0,0.2);*/
+  -webkit-transition: all 1.3s;
+  -moz-transition: all 1.3s;
+  transition: all 1.3s;
+}
+
+.header h3 {
+  font-size: 20px;
+  color: white;
+  -webkit-transition: all 1.3s;
+  -moz-transition: all 1.3s;
+  transition: all 1.3s;
+}
+
+.header h3 a {
+  color: #fff;
+}
+
+.SMlogo {
+    width: 100px;
+    height: auto;
+    align: center;
+}
+
+.GRIDrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.5px;
+}
+
+/* Create four equal columns that sits next to each other */
+.GRIDcolumn4 {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0.5%;
+}
+
+.GRIDcolumn4 img {
+  margin-top: 4%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Create three equal columns that sits next to each other */
+.GRIDcolumn3 {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 0.5%;
+}
+
+.GRIDcolumn3 img {
+  margin-top: 3%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Create two equal columns that sits next to each other */
+.GRIDcolumn2 {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 0.5%;
+}
+
+.GRIDcolumn2 img {
+  margin-top: 2%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.GRIDcolumn23 {
+  flex: 66%;
+  max-width: 66%;
+  padding: 0 4px;
+}
+
+.GRIDcolumn23 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.GRIDcolumn13 {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.GRIDcolumn13 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Create one equal columns that sits next to each other */
+.GRIDcolumn1 {
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 0.5%;
+}
+
+.GRIDcolumn1 img {
+  margin-top: 1%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.header_buttons {
+  float: right;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  margin-top: -25.7%;
+
+  -webkit-transition: all 1.3s;
+  -moz-transition: all 1.3s;
+  transition: all 1.3s;
+}
+
+.header_buttons a {
+  margin-left: 10px;
+}
+
+.header_buttons a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header_buttons a.buttonActive {
+  background-color: #1CBCAD;
+  color: white;
+}
+
+/* About Wrap */
+.about {
+  background: #2c3e50;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+  position: relative;
+  top: 500px;
+  z-index:999;
+}
+
+.about h5, p {
+  color: white;
+}
+
+.about i {
+  color: white;
+  font-size: 20px;
+  padding-right: 8px;
+  vertical-align: middle;
+}
+
+.footer {
+  background: #2f2f2f;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  top: 500px;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer h5 {
+  color: white;
+}
+
+.footer t {
+  font-weight: bold;
+}
+
+/* social icons: */
+.footer i {
+  padding-right: 8px;
+  /*color: #1abc9c;*/
+}
+
+/* Global Values */
+
+.desc {
+  padding-top: 50px;
+  position: relative;
+  top: 500px;
+  z-index:800;
+}
+
+.desc p {
+  color: #2f2f2f;
+}
+
+.desc t {
+  color: #34495e;
+  font-weight: 700;
+}
+
+.desc h3 {
+  color: #34495e;
+}
+
+.desc imp {
+  padding: 6px;
+  color: white;
+  background: #34495e;
+}
+
+.desc more {
+  color: #616669;
+}
+
+
+sm {
+  font-size: 12px;
+}
+
+.desc .col-lg-3 {
+  text-transform: uppercase;
+}
+
+.container .row p.tight {
+  margin-bottom: 10px;
+  position: relative;
+  z-index:800;
+}
+
+/* dynamic header*/
+
+.header.header-shrink {
+  position: fixed;
+  height: 100px;
+  z-index:10000;
+
+  -webkit-transition:  1.3s;
+  -moz-transition:  1.3s;
+  transition:  1.3s;
+  padding-top: 0px;
+}
+
+.header.header-shrink h1 {
+  font-size: 30px;
+
+
+  -webkit-transition:  1.3s;
+  -moz-transition:  1.3s;
+  transition:  1.3s;
+}
+
+.header.header-shrink h3 {
+  opacity: 0;
+  font-size: 10px;
+
+  -webkit-transition:  1.3s;
+  -moz-transition:  1.3s;
+  transition:  1.3s;
+}
+
+.header.header-shrink .profilecls {
+  display: inline-block;
+  position: relative;
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  margin-top: -10px;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+
+  -webkit-transition:  0.5s;
+  -moz-transition:  0.5s;
+  transition:  0.5s;
+}
+
+.header.header-shrink .header_buttons {
+  float: right;
+  margin-top: -6%;
+}
+
+/* define some CSS3 animations: */
+body {
+  /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+  -webkit-backface-visibility: hidden;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/* 1 */
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@media screen and (max-width: 1300px) {
+  .GRIDcolumn4 {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .GRIDcolumn2 {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .header_buttons {
+    float: none;
+    margin-top: 0%;
+  }
+  .header.header-shrink .header_buttons {
+    position: relative;
+    float: none;
+    margin-top: -60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header.header-shrink .header_buttons {
+    position: relative;
+    float: none;
+    margin-top: -60px;
+  }
+}
+
+@media screen and (max-width: 55em) {
+  .header {
+    width: 100%;
+  }
+  .header h1
+  {
+    text-align: center;
+    font-size: 30px;
+    background: rgba(0,0,0,0.4);
+    -webkit-transition: all 1.3s;
+    -moz-transition: all 1.3s;
+    transition: all 1.3s;
+  }
+  .header h3
+  {
+    /*position: fixed;*/
+    text-align: center;
+    top: 290px;
+    text-align: center;
+    font-size: 18px;
+    -webkit-transition: all 1.3s;
+    -moz-transition: all 1.3s;
+    transition: all 1.3s;
+  }
+  .header_buttons {
+    position: relative;
+    float: none;
+    margin-top: 0%;
+  }
+  .profilecls {
+    float: none;
+    height: auto;
+    margin-top: -90px;
+    width: 120px;
+    -webkit-transition: all 1.3s;
+    -moz-transition: all 1.3s;
+    transition: all 1.3s;
+  }
+  .SMlogo {
+    width: 60px;
+    height: auto;
+    align: center;
+    margin-left: 0%
+  }
+  .header nav a {
+    margin: 0 10px;
+  }
+  .header.header-shrink {
+    height: 100px;
+  }
+  .header.header-shrink h1 {
+    margin-top: -150px;
+    align: center;
+    font-size: 14px;
+    background: rgba(0,0,0,0.4);
+  }
+  .header.header-shrink h3 {
+    opacity: 0;
+    margin-top: -100px;
+    align: center;
+    font-size: 12px;
+  }
+  .header.header-shrink .profilecls {
+    opacity: 0;
+  }
+  .header.header-shrink .header_buttons {
+    float: none;
+    margin-top: 170px;
+    align: center;
+    font-size: 10px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 32.25em) {
+  .header {
+    font-size: 1em;
+  }
+  .header.header-shrink .header_buttons {
+    font-size: 5px
+    float: right;
+  }
+}
+
+@media screen and (max-width: 24em) {
+  .header nav a,
+  .header.header-shrink nav a {
+    line-height: 1;
+  }
+  .header.header-shrink .header_buttons {
+    font-size: 5px
+    float: right;
+  }
+}
