@@ -1,22 +1,19 @@
 body {
   background-color: #f2f2f2;
-  font-family: "Roboto", sans-serif; /* OPTIONAL: Google Fonts - base font */
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #555;
-
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
 }
 
-/* Titles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif; /* OPTIONAL: Google Fonts - title font */
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   color: #333;
 }
 
-/* Paragraph & Typographic */
 p {
   line-height: 28px;
   margin-bottom: 25px;
@@ -33,11 +30,9 @@ span.parSkills {
   text-align: center;
 }
 
-/* Links */
 a {
   color: #1CBCAD;
   word-wrap: break-word;
-
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
   -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -70,11 +65,6 @@ hr {
   padding: 0;
 }
 
-/*---------------------------------------------------
-SECTION WRAPS
----------------------------------------------------*/
-
-/* Header Wrap */
 .wrapper {
   width: 100%;
   margin: 0 auto;
@@ -83,47 +73,34 @@ SECTION WRAPS
   border: none;
 }
 
-/*#headerPRJ .header{
-  background-image: url(../images/project-bg.jpg) no-repeat center top;
+.profilecls {
+  float: left;
+  width: 200px;
+  background: #555;
+  -webkit-transition: all 1.3s;
+  -moz-transition: all 1.3s;
+  transition: all 1.3s;
 }
-
-#headerHOME .header{
-  background-image: url(../images/header-bg.jpg) no-repeat center top;
-}*/
 
 .header {
   position: fixed;
   background: #2c3e50;
   background: url(../images/header-bg.jpg) no-repeat center top;
   padding-top: 140px;
-  text-align:center;
+  text-align: center;
   background-attachment: relative;
   background-position: center center;
   height: 500px;
   width: 100%;
   z-index: 999;
-
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  -webkit-transition: all 1.3s;
-  -moz-transition: all 1.3s;
-  transition: all 1.3s;
-}
-
-.profilecls {
-  float: left;
-  width: 200px;
-  /*transition: 1.5s;*/
-  background: #555;
-
   -webkit-transition: all 1.3s;
   -moz-transition: all 1.3s;
   transition: all 1.3s;
@@ -132,7 +109,6 @@ SECTION WRAPS
 .header h1 {
   font-size: 60px;
   color: white;
-  /*background: rgba(0,0,0,0.2);*/
   -webkit-transition: all 1.3s;
   -moz-transition: all 1.3s;
   transition: all 1.3s;
@@ -150,10 +126,38 @@ SECTION WRAPS
   color: #fff;
 }
 
+.header_buttons {
+  float: right;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  margin-top: -25.7%;
+  -webkit-transition: all 1.3s;
+  -moz-transition: all 1.3s;
+  transition: all 1.3s;
+}
+
+.header_buttons a {
+  margin-left: 10px;
+}
+
+.header_buttons a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header_buttons a.buttonActive {
+  background-color: #1CBCAD;
+  color: white;
+}
+
 .SMlogo {
-    width: 100px;
-    height: auto;
-    align: center;
+  width: 100px;
+  height: auto;
+  align: center;
 }
 
 .GRIDrow {
@@ -162,7 +166,6 @@ SECTION WRAPS
   padding: 0 0.5px;
 }
 
-/* Create four equal columns that sits next to each other */
 .GRIDcolumn4 {
   flex: 25%;
   max-width: 25%;
@@ -175,7 +178,6 @@ SECTION WRAPS
   width: 100%;
 }
 
-/* Create three equal columns that sits next to each other */
 .GRIDcolumn3 {
   flex: 33%;
   max-width: 33%;
@@ -188,7 +190,6 @@ SECTION WRAPS
   width: 100%;
 }
 
-/* Create two equal columns that sits next to each other */
 .GRIDcolumn2 {
   flex: 50%;
   max-width: 50%;
@@ -225,7 +226,6 @@ SECTION WRAPS
   width: 100%;
 }
 
-/* Create one equal columns that sits next to each other */
 .GRIDcolumn1 {
   flex: 100%;
   max-width: 100%;
@@ -238,37 +238,6 @@ SECTION WRAPS
   width: 100%;
 }
 
-.header_buttons {
-  float: right;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-  margin-top: -25.7%;
-
-  -webkit-transition: all 1.3s;
-  -moz-transition: all 1.3s;
-  transition: all 1.3s;
-}
-
-.header_buttons a {
-  margin-left: 10px;
-}
-
-.header_buttons a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active/current link*/
-.header_buttons a.buttonActive {
-  background-color: #1CBCAD;
-  color: white;
-}
-
-/* About Wrap */
 .about {
   background: #2c3e50;
   padding-top: 60px;
@@ -276,7 +245,7 @@ SECTION WRAPS
   color: white;
   position: relative;
   top: 500px;
-  z-index:999;
+  z-index: 999;
 }
 
 .about h5, p {
@@ -310,19 +279,15 @@ SECTION WRAPS
   font-weight: bold;
 }
 
-/* social icons: */
 .footer i {
   padding-right: 8px;
-  /*color: #1abc9c;*/
 }
-
-/* Global Values */
 
 .desc {
   padding-top: 50px;
   position: relative;
   top: 500px;
-  z-index:800;
+  z-index: 800;
 }
 
 .desc p {
@@ -348,7 +313,6 @@ SECTION WRAPS
   color: #616669;
 }
 
-
 sm {
   font-size: 12px;
 }
@@ -360,38 +324,32 @@ sm {
 .container .row p.tight {
   margin-bottom: 10px;
   position: relative;
-  z-index:800;
+  z-index: 800;
 }
-
-/* dynamic header*/
 
 .header.header-shrink {
   position: fixed;
   height: 100px;
-  z-index:10000;
-
-  -webkit-transition:  1.3s;
-  -moz-transition:  1.3s;
-  transition:  1.3s;
+  z-index: 10000;
+  -webkit-transition: 1.3s;
+  -moz-transition: 1.3s;
+  transition: 1.3s;
   padding-top: 0px;
 }
 
 .header.header-shrink h1 {
   font-size: 30px;
-
-
-  -webkit-transition:  1.3s;
-  -moz-transition:  1.3s;
-  transition:  1.3s;
+  -webkit-transition: 1.3s;
+  -moz-transition: 1.3s;
+  transition: 1.3s;
 }
 
 .header.header-shrink h3 {
   opacity: 0;
   font-size: 10px;
-
-  -webkit-transition:  1.3s;
-  -moz-transition:  1.3s;
-  transition:  1.3s;
+  -webkit-transition: 1.3s;
+  -moz-transition: 1.3s;
+  transition: 1.3s;
 }
 
 .header.header-shrink .profilecls {
@@ -406,10 +364,9 @@ sm {
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
-
-  -webkit-transition:  0.5s;
-  -moz-transition:  0.5s;
-  transition:  0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header.header-shrink .header_buttons {
@@ -417,9 +374,7 @@ sm {
   margin-top: -6%;
 }
 
-/* define some CSS3 animations: */
 body {
-  /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
   -webkit-backface-visibility: hidden;
 }
 
@@ -481,7 +436,6 @@ body {
   animation-name: fadeIn;
 }
 
-/* 1 */
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -542,14 +496,17 @@ body {
     flex: 50%;
     max-width: 50%;
   }
+
   .GRIDcolumn2 {
     flex: 50%;
     max-width: 50%;
   }
+
   .header_buttons {
     float: none;
     margin-top: 0%;
   }
+
   .header.header-shrink .header_buttons {
     position: relative;
     float: none;
@@ -569,18 +526,17 @@ body {
   .header {
     width: 100%;
   }
-  .header h1
-  {
+
+  .header h1 {
     text-align: center;
     font-size: 30px;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     -webkit-transition: all 1.3s;
     -moz-transition: all 1.3s;
     transition: all 1.3s;
   }
-  .header h3
-  {
-    /*position: fixed;*/
+
+  .header h3 {
     text-align: center;
     top: 290px;
     text-align: center;
@@ -589,11 +545,13 @@ body {
     -moz-transition: all 1.3s;
     transition: all 1.3s;
   }
+
   .header_buttons {
     position: relative;
     float: none;
     margin-top: 0%;
   }
+
   .profilecls {
     float: none;
     height: auto;
@@ -603,33 +561,40 @@ body {
     -moz-transition: all 1.3s;
     transition: all 1.3s;
   }
+
   .SMlogo {
     width: 60px;
     height: auto;
     align: center;
     margin-left: 0%
   }
+
   .header nav a {
     margin: 0 10px;
   }
+
   .header.header-shrink {
     height: 100px;
   }
+
   .header.header-shrink h1 {
     margin-top: -150px;
     align: center;
     font-size: 14px;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
   }
+
   .header.header-shrink h3 {
     opacity: 0;
     margin-top: -100px;
     align: center;
     font-size: 12px;
   }
+
   .header.header-shrink .profilecls {
     opacity: 0;
   }
+
   .header.header-shrink .header_buttons {
     float: none;
     margin-top: 170px;
@@ -643,19 +608,20 @@ body {
   .header {
     font-size: 1em;
   }
+
   .header.header-shrink .header_buttons {
-    font-size: 5px
-    float: right;
+    font-size: 5px float: right;
   }
 }
 
 @media screen and (max-width: 24em) {
+
   .header nav a,
   .header.header-shrink nav a {
     line-height: 1;
   }
+
   .header.header-shrink .header_buttons {
-    font-size: 5px
-    float: right;
+    font-size: 5px float: right;
   }
 }

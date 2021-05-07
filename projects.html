@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -27,496 +28,485 @@
     <div class="container">
       <div class="centered">
         <div class="col-lg-12">
-          <!-- EDIT: name -->
-          <img src="images/profile.jpg" alt="profile" class="profilecls"/>
+          <img src="images/profile.jpg" alt="profile" class="profilecls" />
           <h1>My research projects</h1>
-          <!-- EDIT: title | email -->
           <h3>Oleksii Poleshchuk, a PhD researcher in Nuclear Physics</h3>
-          <!--| MSc in Nuclear and Particle Physics | Specialist degree in Medical Physics-->
           <h3><a href="mailto:oleksii.poleshchuk@kuleuven.be" target="_blank">oleksii.poleshchuk@kuleuven.be</a></h3>
           <div class="header_buttons">
             <a class="button" href="index.html">HOME</a>
             <a class="buttonActive" href="projects.html">PROJECTS</a>
             <a class="button" href="#target_email">CONTACTS</a>
           </div>
-        </div><!--/.col-lg-12 -->
-      </div><!--/.row -->
-    </div><!--/.container -->
-  </div><!--/.headerPRJ -->
+        </div>
+        <!--/.col-lg-12 -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.headerPRJ -->
 
   <section id="ptojects" name="projects">
-  <!-- First project section -->
-  <div class="container desc">
-    <div class="row">
-      <div class="col-lg-2 col-lg-offset-1">
-        <img src="images/SpecMAT_2.1_logo1.png" alt="SMlogo" class="SMlogo" />
-      </div>
-      <div class="col-lg-9">
-        <p><h3>Development of the SpecMAT active target</h3>
-          <br>During my PhD I have developed and built a state-of-the-art detector - the SpecMAT active target. At this moment (2021), SpecMAT is a unique detector that combines the active target technology with high-resolution scintillation detectors capable of operating in a strong magnetic field. The SpecMAT was built to study atomic nuclei with single-nucleon transfer reactions. The active target can acquire three-dimensional tracks of light reaction products and work in coincidence with the scintillation array sensitive to gamma-rays emitted by the heavy reaction products. Such a combination of detectors sensitive to charged particles and gamma-rays in one setup allows obtaining a maximal amount of experimental observables from a reaction.
-          <br>
-        </br>
-        The project structure is shown in the follwing list:
-        <ul>
-          <a href="#target_construction_scint_arr"><li>Construction of the scintillation array</a>
+    <!-- First project section -->
+    <div class="container desc">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <img src="images/SpecMAT_2.1_logo1.png" alt="SMlogo" class="SMlogo" />
+        </div>
+        <div class="col-lg-9">
+          <p>
+            <h3>Development of the SpecMAT active target</h3>
+            <br>During my PhD I have developed and built a state-of-the-art detector - the SpecMAT active target. At this moment (2021), SpecMAT is a unique detector that combines the active target technology with high-resolution scintillation
+            detectors capable of operating in a strong magnetic field. The SpecMAT was built to study atomic nuclei with single-nucleon transfer reactions. The active target can acquire three-dimensional tracks of light reaction products and work in
+            coincidence with the scintillation array sensitive to gamma-rays emitted by the heavy reaction products. Such a combination of detectors sensitive to charged particles and gamma-rays in one setup allows obtaining a maximal amount of
+            experimental observables from a reaction.
+            <br>
+            </br>
+            The project structure is shown in the follwing list:
             <ul>
-              <a href="#target_construction_scint_arr"><li>Prototyping and testing scintillation gamma-ray detectors</li></a>
-              <a href="#target_geant4"><li>Geant4 simulations</li></a>
-              <a href="#target_mech_scint"><li>Mechanical design of the array</li></a>
-              <a href="#target_charact_scint"><li>Characterisation of the array</li></a>
+              <a href="#target_construction_scint_arr">
+                <li>Construction of the scintillation array
+              </a>
+              <ul>
+                <a href="#target_construction_scint_arr">
+                  <li>Prototyping and testing scintillation gamma-ray detectors</li>
+                </a>
+                <a href="#target_geant4">
+                  <li>Geant4 simulations</li>
+                </a>
+                <a href="#target_mech_scint">
+                  <li>Mechanical design of the array</li>
+                </a>
+                <a href="#target_charact_scint">
+                  <li>Characterisation of the array</li>
+                </a>
+              </ul>
+              </li>
+              <a href="#target_construction_AT">
+                <li>Construction of the active target
+              </a>
+              <ul>
+                <a href="#target_construction_AT">
+                  <li>Electric field simulations with CIMOSOL and SIMION</li>
+                </a>
+                <a href="#target_detector_construction">
+                  <li>Mechanical design and construction of the detector components</li>
+                </a>
+                <a href="#target_charact_AT">
+                  <li>Characterisation of the active target</li>
+                </a>
+              </ul>
+              </li>
             </ul>
-          </li>
-          <a href="#target_construction_AT"><li>Construction of the active target</a>
-            <ul>
-              <a href="#target_construction_AT"><li>Electric field simulations with CIMOSOL and SIMION</li></a>
-              <a href="#target_detector_construction"><li>Mechanical design and construction of the detector components</li></a>
-              <a href="#target_charact_AT"><li>Characterisation of the active target</li></a>
-            </ul>
-          </li>
-        </ul>
-        </br>
-        Each subproject is briefly described below.
-        </p>
-        <hr>
-      </div>
-
-      <div id="target_construction_scint_arr" class="col-lg-9 col-lg-offset-3">
-        <p><h3>Construction of the scintillation array</h3></br>
-          <t>Prototyping and testing scintillation gamma-ray detectors</t>
-          <br>I tested various scintillation crystals and novel SiPM photomultipliers coupled to digital readout electronics (including tests in strong magnetic fields) for the future detector array of the SpecMAT project.
-          <br>
-          <div class="GRIDrow">
-            <div class="GRIDcolumn2">
-              <img src="images/ScintTest/Det_In_MRI.jpg" alt="The detector in an MRI scanner">
+            </br>
+            Each subproject is briefly described below.
+          </p>
+          <hr>
+        </div>
+        <!-- Subproject 1 -->
+        <div id="target_construction_scint_arr" class="col-lg-9 col-lg-offset-3">
+          <p>
+            <h3>Construction of the scintillation array</h3></br>
+            <t>Prototyping and testing scintillation gamma-ray detectors</t>
+            <br>I tested various scintillation crystals and novel SiPM photomultipliers coupled to digital readout electronics (including tests in strong magnetic fields) for the future detector array of the SpecMAT project.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn2">
+                <img src="images/ScintTest/Det_In_MRI.jpg" alt="The detector in an MRI scanner">
+              </div>
+              <div class="GRIDcolumn2">
+                <img src="images/ScintTest/SiPM_and_CeBr.jpg" alt="SiPM and CeBr3 scintillator">
+                <img src="images/ScintTest/SiPMcleaning.jpg" alt="SiPM">
+              </div>
+              <div class="GRIDrow">
+                <div class="GRIDcolumn1">
+                  <img src="images/ScintTest/Det_In_MRI-Pano.jpg" alt="Data acquisition electronics near the MRI scanner">
+                </div>
+              </div>
             </div>
-            <div class="GRIDcolumn2">
-              <img src="images/ScintTest/SiPM_and_CeBr_cryst.jpg" alt="SiPM and CeBr3">
-              <img src="images/ScintTest/SiPMcleaning.jpg" alt="SiPM">
+            <br>These tests and R&D of the detectors lead to the final design and production of the detectors by SCIONIX.
+            <div class="GRIDrow">
+              <div class="GRIDcolumn23">
+                <img src="images/ScintTest/Cryst_cub_simple_38x38mm-1.png">
+              </div>
+              <div class="GRIDcolumn13">
+                <img src="images/ScintTest/Picture41.jpg">
+              </div>
+            </div>
+          </p>
+          <hr>
+        </div>
+        <!-- Subproject 2 -->
+        <div id="target_geant4" class="col-lg-9 col-lg-offset-3">
+          <p>
+            <t>Geant4 simulations</t>
+            <br>Before designing and producing the scintillation array, I have performed detailed simulations of the gamma-ray detection efficiency of stand-alone scintillation detectors and detectors arranged into arrays using the Geant4 Monte
+            Carlo simulation toolkit (in C++ programming language).
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn4">
+                <img src="images/GEANT4/GEANT4crystal3.png">
+                <img src="images/GEANT4/GEANT4crystal4.png">
+                <img src="images/GEANT4/Spectrum_3MeV.png">
+              </div>
+              <div class="GRIDcolumn4">
+                <img src="images/GEANT4/GEANT4crystal2.png">
+                <img src="images/GEANT4/GEANT4crystal.png">
+                <img src="images/GEANT4/Spectrum_Eu152.png">
+              </div>
+              <div class="GRIDcolumn4">
+                <img src="images/GEANT4/Detector_array_sim_3_1.png">
+                <img src="images/GEANT4/Detector_array_sim_4_1.png">
+                <img src="images/GEANT4/DopplerCor.png">
+              </div>
+              <div class="GRIDcolumn4">
+                <img src="images/GEANT4/GEANT4array.png ">
+                <img src="images/GEANT4/GEANT4array2.png">
+                <img src="images/GEANT4/Efficiency_30det.png">
+              </div>
+            </div>
+
+            <div class="GRIDrow">
+              <div class="GRIDcolumn1">
+                <img src="images/GEANT4/SpecMATSim.png">
+              </div>
+            </div>
+
+            <br>My Geant4 models and ROOT analysis codes can be found on <a href="https://github.com/OPoleshchuk" target="_blank">GitHub</a> <a href="https://github.com/OPoleshchuk" target="_blank"><i class="icon-github"></i></a>
+          </p>
+          <hr>
+        </div>
+        <!-- Subproject 3 -->
+        <div id="target_mech_scint" class="col-lg-9 col-lg-offset-3">
+          <p>
+            <t>Generative design of the array holder in Fusion360</t>
+            <br>This part of the project includes the reduction of the detector support weight based on finite element stress analysis.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn2">
+                <img src="images/generative/Array_original.png">
+              </div>
+              <div class="GRIDcolumn2">
+                <img src="images/generative/Array_reduced.png">
+              </div>
+            </div>
+            <br>The designed parts were 3D printed using the SLS technique.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn2">
+                <img src="images/generative/array.jpg">
+              </div>
+              <div class="GRIDcolumn2">
+                <img src="images/generative/array2.jpg">
+              </div>
+            </div>
+          </p>
+          <hr>
+        </div>
+        <!-- Subproject 4 -->
+        <div id="target_charact_scint" class="col-lg-9 col-lg-offset-3">
+          <p>
+            <t>Characterisation of the array</t>
+            <br>I characterised the scintillation array separately from the active target. A preparation for energy and efficiency calibration is shown in the photo below.
+            <div class="GRIDrow">
+              <div class="GRIDcolumn1">
+                <img src="images/SpecMAT/detector.jpg">
+              </div>
+            </div>
+          </p>
+          <hr>
+        </div>
+        <!-- Subproject 5 -->
+        <div id="target_construction_AT" class="col-lg-9 col-lg-offset-3">
+          <p>
+            <h3>Construction of the active target</h3></br>
+            <t>Simulation of electrons tracks in an electric field with SIMION.</t>
+            <br>Optimisation of the TPC&apos;s filed cage geometry is highly important for identifying charged particle tracks in the detector. I made simulations of electrons trajectories in a TPC for various field cage geometries that allowed me
+            to choose an optimal configuration.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn3">
+                <img src="images/SIMION/SpecMAT_cut_view_2.png">
+              </div>
+              <div class="GRIDcolumn3">
+                <img src="images/SIMION/SpecMAT_equipotential_lines_2.png">
+              </div>
+              <div class="GRIDcolumn3">
+                <img src="images/SIMION/SpecMAT_electron_tracks_2.png">
+              </div>
             </div>
             <div class="GRIDrow">
               <div class="GRIDcolumn1">
-                <img src="images/ScintTest/Det_In_MRI-Pano.jpg" alt="Data acquisition electronics near the MRI scanner">
+                <img src="images/SIMION/3mm0mmgapEx.png">
               </div>
             </div>
-          </div>
-          <br>These tests and R&D of the detectors lead to the final design and production of the detectors by SCIONIX.
-          <div class="GRIDrow">
-            <div class="GRIDcolumn23">
-              <img src="images/ScintTest/Cryst_cub_simple_38x38mm-1.png">
+          </p>
+          <hr>
+        </div>
+        <!-- Subproject 6 -->
+        <div class="col-lg-9 col-lg-offset-3">
+          <p>
+            <t>COMSOL Multiphysics simulations of electric field homoginiety</t>
+            <br>More advanced and systematic simulations of the electric field in the TPC field cage I have made with COMSOL Multiphysics using geometries created in CAD software.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn2">
+                <img src="images/COMSOL/Picture1.png">
+              </div>
+              <div class="GRIDcolumn2">
+                <img src="images/COMSOL/Vmap.png">
+              </div>
             </div>
-            <div class="GRIDcolumn13">
-              <img src="images/ScintTest/Picture41.jpg">
+            <div class="GRIDrow">
+              <div class="GRIDcolumn1">
+                <img src="images/COMSOL/comparison.png">
+              </div>
             </div>
-          </div>
-        </p>
-        <hr>
-      </div>
-
-      <div id="target_geant4" class="col-lg-9 col-lg-offset-3">
-        <p><t>Geant4 simulations</t>
-          <br>Before designing and producing the scintillation array, I have performed detailed simulations of the gamma-ray detection efficiency of stand-alone scintillation detectors and detectors arranged into arrays using the Geant4 Monte Carlo simulation toolkit (in C++ programming language).
+            <br>This electric field simulation helped to define a preliminary shape of the gas chamber. However, the finalisation of the chamber design requires further mechanical simulations.
+          </p>
+          <hr>
+        </div>
+        <!-- Subproject 7 -->
+        <div class="col-lg-9 col-lg-offset-3">
+          <p>
+            <t>COMSOL Multiphysics simulations of stress distribution</t>
+            <br>To define the final shape of the gas chamber, I simulated stress distribution in the chamber under vacuum and overpressure conditions. These simulations were also performed in COMSOL with geometry inputs from Autodesk Inventor.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn2">
+                <img src="images/COMSOL/ChamberStress1.png">
+              </div>
+              <div class="GRIDcolumn2">
+                <img src="images/COMSOL/ChamberStress2.png">
+              </div>
+            </div>
+          </p>
+          <hr>
+        </div>
+        <!-- Subproject 8 -->
+        <div id="target_detector_construction" class="col-lg-9 col-lg-offset-3">
+          <p>
+            <t>Mechanical design and construction of the detector components</t>
+            <br>I refined the design of the gas chamber based on the FEA simulation outputs. Based on my design, the gas chamber of the detector was produced by an external company.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn1">
+                <img src="images/COMSOL/SpecMAT_Chamber_real_ORings-1.png">
+              </div>
+              <div class="GRIDcolumn1">
+                <img src="images/COMSOL/chamber.jpg">
+              </div>
+            </div>
+          </p>
+          <hr>
+        </div>
+        <!-- Subproject 9 -->
+        <div id="target_charact_AT" class="col-lg-9 col-lg-offset-3">
+          <p>
+            <t>Characterisation of the active target</t>
+            <br>To operate the detector in an environment with a reduced amount of dust, I upgraded the cleanroom of the laboratory to Class 100 (ISO 5). The assembling of the gaseous detector in the cleanroom is shown below.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn1">
+                <img src="images/SpecMAT/MPGD_assembly.jpg">
+              </div>
+            </div>
+          </p>
           <br>
-          <div class="GRIDrow">
-            <div class="GRIDcolumn4">
-              <img src="images/GEANT4/GEANT4crystal3.png">
-              <img src="images/GEANT4/GEANT4crystal4.png">
-              <img src="images/GEANT4/Spectrum_3MeV.png">
+          <p>Also, I designed and built a gas supply system for the active target.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn1">
+                <img src="images/SpecMAT/Gas_system.jpg">
+              </div>
             </div>
-            <div class="GRIDcolumn4">
-              <img src="images/GEANT4/GEANT4crystal2.png">
-              <img src="images/GEANT4/GEANT4crystal.png">
-              <img src="images/GEANT4/Spectrum_Eu152.png">
+          </p>
+          <br>
+          <p>Integrating all the built systems and detectors, I assembled the SpecMAT active target and characterised it with a measurement of decay products of <sup>241</sup>Am. The assembled detector and the first alpha-particle track are shown
+            below. The correlation of alpha-particle tracks with detected gamma-rays in the scintillation array is described in my thesis.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn1">
+                <img src="images/SpecMAT/SpecMAT.jpg">
+              </div>
+              <div class="GRIDcolumn1">
+                <img src="images/SpecMAT/Track_merged_fromG4_square3.png">
+              </div>
+              <div class="GRIDcolumn1">
+                <img src="images/SpecMAT/SpecMAT_lab.jpg">
+              </div>
             </div>
-            <div class="GRIDcolumn4">
-              <img src="images/GEANT4/Detector_array_sim_3_1.png">
-              <img src="images/GEANT4/Detector_array_sim_4_1.png">
-              <img src="images/GEANT4/DopplerCor.png">
-            </div>
-            <div class="GRIDcolumn4">
-              <img src="images/GEANT4/GEANT4array.png ">
-              <img src="images/GEANT4/GEANT4array2.png">
-              <img src="images/GEANT4/Efficiency_30det.png">
-            </div>
-          </div>
-
-          <div class="GRIDrow">
-            <div class="GRIDcolumn1">
-              <img src="images/GEANT4/SpecMATSim.png">
-            </div>
-          </div>
-
-          <br>My Geant4 models and ROOT analysis codes can be found on <a href="https://github.com/OPoleshchuk" target="_blank">GitHub</a> <a href="https://github.com/OPoleshchuk" target="_blank"><i class="icon-github"></i></a>
-        </p>
-        <hr>
+          </p>
+        </div>
       </div>
-
-  <div id="target_mech_scint" class="col-lg-9 col-lg-offset-3">
-    <p><t>Generative design of the array holder in Fusion360</t>
-      <br>This part of the project includes the reduction of the detector support weight based on finite element stress analysis.
+      <!--/.row -->
       <br>
-      <div class="GRIDrow">
-        <div class="GRIDcolumn2">
-          <img src="images/generative/Array_original.png">
-        </div>
-        <div class="GRIDcolumn2">
-          <img src="images/generative/Array_reduced.png">
-        </div>
-      </div>
-      <br>The designed parts were 3D printed using the SLS technique.
-      <br>
-      <div class="GRIDrow">
-        <div class="GRIDcolumn2">
-          <img src="images/generative/array.jpg">
-        </div>
-        <div class="GRIDcolumn2">
-          <img src="images/generative/array2.jpg">
-        </div>
-      </div>
-      <!--<br><b>Test</b>-->
-      <!--<br/><i>Extra info here</i>-->
-    </p>
-    <hr>
-  </div>
-
-  <!-- EDIT: subproject 2 -->
-  <div id="target_charact_scint" class="col-lg-9 col-lg-offset-3">
-    <p><t>Characterisation of the array</t>
-      <br>I characterised the scintillation array separately from the active target. A preparation for energy and efficiency calibration is shown in the photo below.
-      <div class="GRIDrow">
-        <div class="GRIDcolumn1">
-          <img src="images/SpecMAT/detector.jpg">
-        </div>
-      </div>
-    </p>
-    <hr>
-  </div>
-  <!-- EDIT: subproject 2 -->
-  <div id="target_construction_AT" class="col-lg-9 col-lg-offset-3">
-    <p><h3>Construction of the active target</h3></br>
-      <t>Simulation of electrons tracks in an electric field with SIMION.</t>
-      <br>Optimisation of the TPC&apos;s filed cage geometry is highly important for identifying charged particle tracks in the detector. I made simulations of electrons trajectories in a TPC for various field cage geometries that allowed me to choose an optimal configuration.
-      <br>
-      <div class="GRIDrow">
-        <div class="GRIDcolumn3">
-          <img src="images/SIMION/SpecMAT_cut_view_2.png">
-        </div>
-        <div class="GRIDcolumn3">
-          <img src="images/SIMION/SpecMAT_equipotential_lines_2.png">
-        </div>
-        <div class="GRIDcolumn3">
-          <img src="images/SIMION/SpecMAT_electron_tracks_2.png">
-        </div>
-        <!--<div class="GRIDcolumn2">
-        <img src="images/SIMION/SpecMAT_cut_view.png">
-        <img src="images/SIMION/SpecMAT_equipotential_lines.png">
-        <img src="images/SIMION/SpecMAT_electron_tracks.png">
-        <img src="images/SIMION/3mm0mmgapEx.png">
-      </div>-->
-    </div>
-    <div class="GRIDrow">
-      <div class="GRIDcolumn1">
-        <img src="images/SIMION/3mm0mmgapEx.png">
-      </div>
-    </div>
-    <!--<br>However, further design of the field cage requires more advanced simulations in COMSOL-->
-    <!--<br><b>Test</b>-->
-    <!--<br/><i>Extra info here</i>-->
-  </p>
-  <hr>
-</div>
-<!-- EDIT: subproject 3 -->
-<div class="col-lg-9 col-lg-offset-3">
-  <p><t>COMSOL Multiphysics simulations of electric field homoginiety</t>
-    <br>More advanced and systematic simulations of the electric field in the TPC field cage I have made with COMSOL Multiphysics using geometries created in CAD software.
-    <br>
-    <div class="GRIDrow">
-      <div class="GRIDcolumn2">
-        <img src="images/COMSOL/Picture1.png">
-      </div>
-      <div class="GRIDcolumn2">
-        <img src="images/COMSOL/Vmap.png">
-      </div>
-    </div>
-    <div class="GRIDrow">
-      <div class="GRIDcolumn1">
-        <img src="images/COMSOL/comparison.png">
-      </div>
-    </div>
-    <br>This electric field simulation helped to define a preliminary shape of the gas chamber. However, the finalisation of the chamber design requires further mechanical simulations.
-  </p>
-  <hr>
-</div>
-<div class="col-lg-9 col-lg-offset-3">
-  <p><t>COMSOL Multiphysics simulations of stress distribution</t>
-    <br>To define the final shape of the gas chamber, I simulated stress distribution in the chamber under vacuum and overpressure conditions. These simulations were also performed in COMSOL with geometry inputs from Autodesk Inventor.
-    <br>
-    <div class="GRIDrow">
-      <div class="GRIDcolumn2">
-        <img src="images/COMSOL/ChamberStress1.png">
-      </div>
-      <div class="GRIDcolumn2">
-        <img src="images/COMSOL/ChamberStress2.png">
-      </div>
-    </div>
-
-    <!--<br><b>Test</b>-->
-    <!--<br/><i>Extra info here</i>-->
-  </p>
-  <hr>
-</div>
-
-
-<!-- EDIT: subproject 3 -->
-<div id="target_detector_construction" class="col-lg-9 col-lg-offset-3">
-  <p><t>Mechanical design and construction of the detector components</t>
-    <br>I refined the design of the gas chamber based on the FEA simulation outputs. Based on my design, the gas chamber of the detector was produced by an external company.
-    <br>
-    <div class="GRIDrow">
-      <div class="GRIDcolumn1">
-        <img src="images/COMSOL/SpecMAT_Chamber_real_ORings-1.png">
-      </div>
-      <div class="GRIDcolumn1">
-        <img src="images/COMSOL/chamber.jpg">
-      </div>
-    </div>
-    <!--<br><b>Test</b>-->
-    <!--<br/><i>Extra info here</i>-->
-  </p>
-  <hr>
-</div>
-
-
-
-<!--
-<div class="col-lg-9 col-lg-offset-3">
-<p><t>Data Acquisition System for SpecMAT</t>
-<br><i>Installation of two server machines (63TB each after RAID5) and caonfiguration of DAQ electronics, the General Electronics for Time projection chambers (GET) </i>
-<br>
-<div class="GRIDrow">
-<div class="GRIDcolumn1">
-<img src="images/SpecMAT/detector.jpg">
-</div>
-</div>
-</p>
-<hr>
-</div>
-
-<div class="col-lg-9 col-lg-offset-3">
-<p><t>Design of the front end readout electronics for the SpecMAT project</t>
-<br><i>To match the interface of the GET electronics and adaptation board should be designed for each type of detectors.</i>
-<br>
-<div class="GRIDrow">
-<div class="GRIDcolumn1">
-<img src="images/SpecMAT/detector.jpg">
-</div>
-</div>
-</p>
-<hr>
-</div>-->
-
-<!-- EDIT: subproject 7 -->
-<div id="target_charact_AT" class="col-lg-9 col-lg-offset-3">
-  <p><t>Characterisation of the active target</t>
-    <br>To operate the detector in an environment with a reduced amount of dust, I upgraded the cleanroom of the laboratory to Class 100 (ISO 5). The assembling of the gaseous detector in the cleanroom is shown below.
-    <br>
-    <div class="GRIDrow">
-      <div class="GRIDcolumn1">
-        <img src="images/SpecMAT/MPGD_assembly.jpg">
-      </div>
-    </div>
-  </p>
-  <br>
-  <p>Also, I designed and built a gas supply system for the active target.
-    <br>
-    <div class="GRIDrow">
-      <div class="GRIDcolumn1">
-        <img src="images/SpecMAT/Gas_system.jpg">
-      </div>
-    </div>
-  </p>
-  <br>
-  <p>Integrating all the built systems and detectors, I assembled the SpecMAT active target and characterised it with a measurement of decay products of <sup>241</sup>Am. The assembled detector and the first alpha-particle track are shown below. The correlation of alpha-particle tracks with detected gamma-rays in the scintillation array is described in my thesis.
-    <br>
-    <div class="GRIDrow">
-      <div class="GRIDcolumn1">
-        <img src="images/SpecMAT/SpecMAT.jpg">
-      </div>
-      <div class="GRIDcolumn1">
-        <img src="images/SpecMAT/Track_merged_fromG4_square3.png">
-      </div>
-      <div class="GRIDcolumn1">
-        <img src="images/SpecMAT/SpecMAT_lab.jpg">
-      </div>
-    </div>
-  </p>
-</div>
-</div><!--/.row -->
-<br>
-<hr>
-</div><!--/.container -->
-
-<!-- Second project section -->
-<div class="container desc">
-  <div class="row">
-    <div class="col-lg-2 col-lg-offset-1">
-      <img src="images/ACTAR/actar_logo.jpg" alt="SMlogo" class="SMlogo" />
-    </div>
-
-    <!-- EDIT: subproject 1 -->
-    <div class="col-lg-9">
-      <p><h3>Upgrade of ACTAR and ACTAR-DEMONSTRATOR active targets</h3></br>
-        <t>Double-Sided Silicon Strip Detectors for the ACTAR-Demonstrator active target (INFN-LNL/LNS, Legnaro/Catania, Italy)</t>
-        <br>As a side project during my PhD, I contributed to the ACTAR-Demonstrator and the ACTAR active target projects with the design and development of the auxiliary Double-Sided Silicon Strip Detectors (DSSSD) arrays and front-end readout electronics for DSSSDs with its further integration with General Electronics for Timpe projection chambers (GET).
-        <br>
-        <div class="GRIDrow">
-          <div class="GRIDcolumn2">
-            <img src="images/ACTAR/ACTAR-DEMO_desgned_side_flange.png">
-            <img src="images/ACTAR/ACTAR-DEMO_Flanges_Produced.jpg">
-            <img src="images/ACTAR/ACTAR-DEMO_DSSSD_PCB.jpg">
-          </div>
-          <div class="GRIDcolumn2">
-            <img src="images/ACTAR/ACTAR-DEMO_desgned_front_flange.png">
-            <img src="images/ACTAR/ACTAR-DEMO_DSSSD_mounted_on_side_flange.jpg">
-            <img src="images/ACTAR/DSSSD_front_end_DAQ.jpg">
-          </div>
-        </div>
-        <!--<br>However, further design of the field cage requires more advanced simulations in COMSOL-->
-        <!--<br><b>Test</b>-->
-        <!--<br/><i>Extra info here</i>-->
-      </p>
       <hr>
     </div>
+    <!--/.container -->
 
-    <!-- EDIT: subproject 2 -->
-    <div class="col-lg-9 col-lg-offset-3">
-      <p><t>Double-sided Silicon Strip Detector arrays for the ACTAR active target (GANIL, Caen, France)</t>
-        <br>ACTAR-Demonstrator became an incredible learning platform where our research group and I gained experience in integrating DSSSD detectors into an active target. With the new knowledge, we produced more advanced MK2 Silicon arrays for ACTAR.
-        <!--<br><i>During my PhD as a side project, I've contributed to the ACTAR-Demonstrator and the ACTAR active target projects with the design and development of the auxiliary DSSSD arrays and the development and integration of front-end readout electronics for DSSSDs.</i>-->
-        <br>
-        <div class="GRIDrow">
-          <div class="GRIDcolumn2">
-            <img src="images/ACTAR/ACTAR_with_DSSSD_and_DAQ.jpg">
-            <img src="images/ACTAR/ACTAR_DSSSD_array_assembled.jpg">
-          </div>
-          <div class="GRIDcolumn2">
-            <img src="images/ACTAR/ACTAR_DSSSD_array_assembly.jpg">
-            <img src="images/ACTAR/ACTAR_Mylar_Shield-1.png">
-          </div>
+    <!-- Second project section -->
+    <div class="container desc">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <img src="images/ACTAR/actar_logo.jpg" alt="SMlogo" class="SMlogo" />
         </div>
-        <!--<br>However, further design of the field cage requires more advanced simulations in COMSOL-->
-        <!--<br><b>Test</b>-->
-        <!--<br/><i>Extra info here</i>-->
-      </p>
-    </div>
-  </div><!--/.row -->
-  <br>
-  <hr>
-</div><!--/.container -->
-
-<!-- Third project section -->
-<div class="container desc">
-  <div class="row">
-    <div class="col-lg-2 col-lg-offset-1">
-      <img src="images/NeutGamm/jyu_logo.jpg" alt="SMlogo" class="SMlogo" />
-    </div>
-
-    <!-- EDIT: subproject 1 -->
-    <div class="col-lg-9">
-      <p><h3>Characterisation of a novel plastic scintillation material</h3>
-        <br>At the University of Jyv&auml;skyl&auml;, I tested the performance of a nowel plastic scintillation material on gamma-neutron discrimination properties. The obtained results I compared with the performance of a well known BC-501A liquid scintillator.
-        <br>
-        <div class="GRIDrow">
-          <div class="GRIDcolumn1">
-            <img src="images/NeutGamm/Plastic_Liquid_scint.JPG">
-          </div>
+        <!-- Subproject 1 -->
+        <div class="col-lg-9">
+          <p>
+            <h3>Upgrade of ACTAR and ACTAR-DEMONSTRATOR active targets</h3></br>
+            <t>Double-Sided Silicon Strip Detectors for the ACTAR-Demonstrator active target (INFN-LNL/LNS, Legnaro/Catania, Italy)</t>
+            <br>As a side project during my PhD, I contributed to the ACTAR-Demonstrator and the ACTAR active target projects with the design and development of the auxiliary Double-Sided Silicon Strip Detectors (DSSSD) arrays and front-end readout
+            electronics for DSSSDs with its further integration with General Electronics for Timpe projection chambers (GET).
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn2">
+                <img src="images/ACTAR/ACTAR-DEMO_desgned_side_flange.png">
+                <img src="images/ACTAR/ACTAR-DEMO_Flanges_Produced.jpg">
+                <img src="images/ACTAR/ACTAR-DEMO_DSSSD_PCB.jpg">
+              </div>
+              <div class="GRIDcolumn2">
+                <img src="images/ACTAR/ACTAR-DEMO_desgned_front_flange.png">
+                <img src="images/ACTAR/ACTAR-DEMO_DSSSD_mounted_on_side_flange.jpg">
+                <img src="images/ACTAR/DSSSD_front_end_DAQ.jpg">
+              </div>
+            </div>
+          </p>
+          <hr>
         </div>
-        <div class="GRIDrow">
-          <div class="GRIDcolumn2">
-            <img src="images/NeutGamm/plast1.png">
-            <img src="images/NeutGamm/plast2.png">
-          </div>
-          <div class="GRIDcolumn2">
-            <img src="images/NeutGamm/BC5011.png">
-            <img src="images/NeutGamm/BC5012.png">
-          </div>
+        <!-- Subproject 2 -->
+        <div class="col-lg-9 col-lg-offset-3">
+          <p>
+            <t>Double-sided Silicon Strip Detector arrays for the ACTAR active target (GANIL, Caen, France)</t>
+            <br>ACTAR-Demonstrator became an incredible learning platform where our research group and I gained experience in integrating DSSSD detectors into an active target. With the new knowledge, we produced more advanced MK2 Silicon arrays for
+            ACTAR.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn2">
+                <img src="images/ACTAR/ACTAR_with_DSSSD_and_DAQ.jpg">
+                <img src="images/ACTAR/ACTAR_DSSSD_array_assembled.jpg">
+              </div>
+              <div class="GRIDcolumn2">
+                <img src="images/ACTAR/ACTAR_DSSSD_array_assembly.jpg">
+                <img src="images/ACTAR/ACTAR_Mylar_Shield-1.png">
+              </div>
+            </div>
+          </p>
         </div>
-        <!--<br>However, further design of the field cage requires more advanced simulations in COMSOL-->
-        <!--<br><b>Test</b>-->
-        <!--<br/><i>Extra info here</i>-->
-      </p>
+      </div>
+      <!--/.row -->
+      <br>
       <hr>
     </div>
+    <!--/.container -->
 
-    <!-- EDIT: subproject 2 -->
-    <div class="col-lg-9 col-lg-offset-3">
-      <p><h3>Calibration of a low-background high-purity germanium detector</h3>
-        <br>One of my summer internship tasks was a precise calibration of a High-Purity Germanium (HPGe) detector efficiency. The efficiency of this detector is important for accurate activity measurements of weak radioactive samples. A series of measurements with various gamma-ray sources were done to make this calibration, and a calibration device for precise positioning of sources was designed.
-        <br>
-        <div class="GRIDrow">
-          <div class="GRIDcolumn2">
-            <img src="images/HPGeEff/1138mm.png">
-            <img src="images/HPGeEff/Picture1.png">
+    <!-- Third project section -->
+    <div class="container desc">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <img src="images/NeutGamm/jyu_logo.jpg" alt="SMlogo" class="SMlogo" />
+        </div>
+        <!-- Subproject 1 -->
+        <div class="col-lg-9">
+          <p>
+            <h3>Characterisation of a novel plastic scintillation material</h3>
+            <br>At the University of Jyv&auml;skyl&auml;, I tested the performance of a nowel plastic scintillation material on gamma-neutron discrimination properties. The obtained results I compared with the performance of a well known BC-501A
+            liquid scintillator.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn1">
+                <img src="images/NeutGamm/Plastic_Liquid_scint.JPG">
+              </div>
+            </div>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn2">
+                <img src="images/NeutGamm/plast1.png">
+                <img src="images/NeutGamm/plast2.png">
+              </div>
+              <div class="GRIDcolumn2">
+                <img src="images/NeutGamm/BC5011.png">
+                <img src="images/NeutGamm/BC5012.png">
+              </div>
+            </div>
+          </p>
+          <hr>
+        </div>
+        <!-- Subproject 2 -->
+        <div class="col-lg-9 col-lg-offset-3">
+          <p>
+            <h3>Calibration of a low-background high-purity germanium detector</h3>
+            <br>One of my summer internship tasks was a precise calibration of a High-Purity Germanium (HPGe) detector efficiency. The efficiency of this detector is important for accurate activity measurements of weak radioactive samples. A series
+            of measurements with various gamma-ray sources were done to make this calibration, and a calibration device for precise positioning of sources was designed.
+            <br>
+            <div class="GRIDrow">
+              <div class="GRIDcolumn2">
+                <img src="images/HPGeEff/1138mm.png">
+                <img src="images/HPGeEff/Picture1.png">
+              </div>
+              <div class="GRIDcolumn2">
+                <img src="images/HPGeEff/1698mm.png">
+                <img src="images/HPGeEff/Source_Holder_2_1.png">
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+      <!--/.row -->
+      <br>
+      <hr>
+    </div>
+    <!--/.container -->
+  </section>
+
+  <section id="contact" name="contact">
+    <!--FOOTER DESCRIPTION -->
+    <div id="footwrap" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-1">
+            <h5>CONTACT</h5>
           </div>
-          <div class="GRIDcolumn2">
-            <img src="images/HPGeEff/1698mm.png">
-            <img src="images/HPGeEff/Source_Holder_2_1.png">
+          <div class="col-lg-6">
+            <p>
+              <t>Email</t><br />
+              <a href="mailto:oleksii.poleshchuk@kuleuven.be" id="target_email" class="mail">oleksii.poleshchuk@kuleuven.be</a> <br />
+            </p>
+            <p>
+              <t>Address</t><br />
+              KU Leuven <br />
+              Department of Physics and Astronomy <br />
+              Instituut voor Kern- en Stralingsfysica <br />
+              Celestijnenlaan 200D <br />
+              Office 03.81</br>
+              3001 LEUVEN <br />
+              Belgium<br />
+            </p>
+            <p>
+              <t>Phone</t><br />
+              <a href="tel:+3216377953" class="tel">Office: +32(0)16-377-953 </a> <br />
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <p>
+              <sm>SOCIAL LINKS</sm>
+            </p>
+            <p>
+              <a href="https://github.com/OPoleshchuk" target="_blank"><i class="icon-github"></i></a>
+              <a href="https://www.linkedin.com/in/oleksii-poleshchuk-100088152/" target="_blank"><i class="icon-linkedin"></i></a>
+              <a href="https://www.facebook.com/oleksii.poleshchuk" target="_blank"><i class="icon-facebook"></i></a>
+              <a href="https://www.instagram.com/oleksiipoleshchuk/" target="_blank"><i class="icon-instagram"></i></a>
+            </p>
           </div>
         </div>
-      </p>
+        <!--/.row -->
+      </div>
+      <!--/.container -->
     </div>
-  </div><!--/.row -->
-  <br>
-  <hr>
-</div><!--/.container -->
-</section>
-
-<section id="contact" name="contact">
-<!--FOOTER DESCRIPTION -->
-<div id="footwrap" class="footer">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-lg-2 col-lg-offset-1">
-        <h5>CONTACT</h5>
-      </div>
-      <!-- EDIT: email -->
-      <div class="col-lg-6">
-        <p><t>Email</t><br/>
-          <a href="mailto:oleksii.poleshchuk@kuleuven.be" id="target_email" class="mail">oleksii.poleshchuk@kuleuven.be</a> <br/>
-        </p>
-        <!-- EDIT: address -->
-        <p><t>Address</t><br/>
-          KU Leuven <br/>
-          Department of Physics and Astronomy <br/>
-          Instituut voor Kern- en Stralingsfysica <br/>
-          Celestijnenlaan 200D <br/>
-          Office 03.81</br>
-          3001 LEUVEN <br/>
-          Belgium<br/>
-        </p>
-        <!-- EDIT: phone number -->
-        <p><t>Phone</t><br/>
-          <a href="tel:+3216377953" class="tel">Office: +32(0)16-377-953 </a> <br/>
-        </p>
-      </div>
-      <div class="col-lg-3">
-        <p><sm>SOCIAL LINKS</sm></p>
-        <p>
-          <!-- EDIT: Social Links. Replace # with your URL for each -->
-          <!-- <a href="#" target="_blank"><i class="icon-dribbble"></i></a> -->
-          <!-- <a href="#" target="_blank"><i class="icon-twitter"></i></a> -->
-          <a href="https://github.com/OPoleshchuk" target="_blank"><i class="icon-github"></i></a>
-          <a href="https://www.linkedin.com/in/oleksii-poleshchuk-100088152/" target="_blank"><i class="icon-linkedin"></i></a>
-          <a href="https://www.facebook.com/oleksii.poleshchuk" target="_blank"><i class="icon-facebook"></i></a>
-          <a href="https://www.instagram.com/oleksiipoleshchuk/" target="_blank"><i class="icon-instagram"></i></a>
-        </p>
-      </div>
-    </div><!--/.row -->
-  </div><!--/.container -->
-</div><!--/ #footer -->
-</section>
-<script src="js/classie.js"></script>
-<script src="js/cbpAnimatedHeader.min.js"></script>
+    <!--/ #footer -->
+  </section>
+  <script src="js/classie.js"></script>
+  <script src="js/cbpAnimatedHeader.min.js"></script>
 
 </body>
+
 </html>
